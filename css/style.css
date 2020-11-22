@@ -1,0 +1,14 @@
+body {
+  background: #efefef;
+  color: #252525;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#box {
+  width: calc(60%);
+  padding: calc(5%);
+  margin: calc(15%);
+  background:#dfdfdf;
+  border-radius: 14px;
+}

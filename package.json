@@ -1,0 +1,11 @@
+{
+  "name": "thingaday",
+  "version": "1.0.0",
+  "description": "Generate a theme to create something every day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keith OMalley",
+  "license": "ISC"
+}
