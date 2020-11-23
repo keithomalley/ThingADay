@@ -21,17 +21,26 @@ app.listen(port, () => {
 
 
 function addDay(json){
-  let rawdata = fs.readFileSync('public/data/themes.json')
-  let data = JSON.parse(rawdata)
+  if(json.date == getDateString()){
+    let rawdata = fs.readFileSync('public/data/themes.json')
+    let data = JSON.parse(rawdata)
+    data.themes.push(json)
 
-  data.themes.push(json)
+    let datajson = JSON.stringify(data)
 
-  let datajson = JSON.stringify(data)
+    fs.writeFile('public/data/themes.json', datajson, (err) => {
+        if (err) throw err
+        console.log('Data written to file')
+    })
 
-  fs.writeFile('public/data/themes.json', datajson, (err) => {
-      if (err) throw err
-      console.log('Data written to file')
-  })
+    console.log(data)
+    
+  }
 
-  console.log(data)
+}
+
+
+function getDateString() {
+  let d = new Date();
+  return d.getUTCFullYear() + '-' + d.getUTCMonth() + '-' + d.getUTCDate();
 }

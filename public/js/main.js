@@ -724,16 +724,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-function postNewTheme(m, t){
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", '/add', true);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(JSON.stringify({
-      date : getDateString(),
-      medium : m,
-      thing : t
-  }));
-}
 
 function getDateString() {
   return d.getUTCFullYear() + '-' + d.getUTCMonth() + '-' + d.getUTCDate();
@@ -764,6 +754,19 @@ function getDateEnding(i){
       return i + "th";
   }
 }
+
+
+function postNewTheme(m, t){
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", '/add', true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(JSON.stringify({
+      date : getDateString(),
+      medium : m,
+      thing : t
+  }));
+}
+
 
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
