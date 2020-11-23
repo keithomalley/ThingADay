@@ -739,6 +739,32 @@ function getDateString() {
   return d.getUTCFullYear() + '-' + d.getUTCMonth() + '-' + d.getUTCDate();
 }
 
+function getReadableDateString(){
+  var weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return "" + weekdays[d.getUTCDay()] + " " + getDateEnding(d.getUTCDate()) + " " + months[d.getUTCMonth()];
+}
+
+function getDateEnding(i){
+  switch(i){
+    case 1:
+    case 21:
+    case 31:
+      return i + "st";
+      break;
+    case 2:
+    case 22:
+      return i + "nd";
+      break;
+    case 3:
+    case 23:
+      return i + "rd";
+      break;
+    default:
+      return i + "th";
+  }
+}
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -774,3 +800,5 @@ readTextFile("/data/themes.json", function(text){
     document.getElementById("thing").innerHTML = "" + thing;
 
 });
+
+document.getElementById("date").innerHTML = getReadableDateString();
