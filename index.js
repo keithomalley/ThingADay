@@ -24,6 +24,10 @@ function addDay(json){
   if(json.date == getDateString()){
     let rawdata = fs.readFileSync('public/data/themes.json')
     let data = JSON.parse(rawdata)
+    if(data.themes[data.themes.length - 1].date == getDateString()){
+      return
+    }
+
     data.themes.push(json)
 
     let datajson = JSON.stringify(data)
@@ -34,7 +38,7 @@ function addDay(json){
     })
 
     console.log(data)
-    
+
   }
 
 }
