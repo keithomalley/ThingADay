@@ -161,6 +161,43 @@ const things = [
   'brontosaurus',
 
 
+// nature
+  'mushroom',
+  'boulder',
+  'toadstool',
+  'tree',
+  'lily pad',
+  'stream',
+  'lichen',
+  'moss',
+  'fruit',
+  'vegetable',
+  'grass',
+  'undergrowth',
+  'tree stump',
+  'waterfall',
+  'lava',
+  'sea',
+  'rock pool',
+  'nest',
+  'coral',
+  'sand',
+  'dune',
+  'bush',
+  'plant',
+  'seed',
+  'sprout',
+  'log',
+  'stone',
+  'branch',
+  'burrow',
+  'stalagmite',
+  'stalctite',
+  'ore',
+  'vein',
+
+
+
 // fantasy/mythology/creatures
   'dragon',
   'gryphon',
@@ -290,6 +327,8 @@ const things = [
   'thunder',
   'time',
 
+  'portal',
+  'hidden passageway',
 
 
 // clothes
@@ -689,6 +728,38 @@ const things = [
   'free',
   'trapped',
   'belonging',
+  'legend',
+
+  'prehistoric',
+  'ancient',
+  'medieval',
+  'art deco',
+  'cyberpunk',
+
+  'geometric',
+  'glitch',
+  'fractal',
+  'illusion',
+  'fungus',
+  'fluffy',
+  'cute',
+  'sweet',
+  'sour',
+  'ramen',
+  'relief',
+  'exhaustion',
+  'grove',
+  'iceberg',
+  'float',
+  'snow',
+  'hail',
+  'complete',
+  'missing',
+  'incomplete',
+  'broken',
+  'fixed',
+  'slice',
+
 ];
 
 

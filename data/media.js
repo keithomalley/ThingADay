@@ -3,22 +3,31 @@ const media = [
   'modelling',
   'sculpture',
   'texture',
+  'animation',
 
 // 2D
   'sketch',
   'illustration',
+  'comic',
+  'painting',
 
 // interactive
-  'game',
+  'game prototype',
+  'vertical slice',
+  'level blockout',
+  'vfx',
 
 // musical
   'song',
   'instrumental',
+  'chiptune',
+  'orchestral',
 
 // writing
-  'character bio/description',
+  'description',
   'poem',
   'short story',
+  'dialogue',
 ]
 
 const getRandomMedium = () => {
