@@ -10,18 +10,24 @@ const media = [
   'illustration',
   'comic',
   'painting',
+  'ui design',
 
 // interactive
   'game prototype',
-  'vertical slice',
-  'level blockout',
+  'game art style',
+  'level blockout/design',
   'vfx',
+  'game enemy',
+  'game mechanic',
 
 // musical
   'song',
   'instrumental',
   'chiptune',
   'orchestral',
+  'game area theme',
+  'sound effect',
+  'boss theme',
 
 // writing
   'description',
